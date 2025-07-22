@@ -5,6 +5,9 @@ This project demonstrates how to fine-tune a pre-trained **GPT-2 (Generative Pre
 
 The project uses the **Hugging Face `transformers`** library, which provides the necessary tools for downloading, configuring, and training state-of-the-art NLP models with PyTorch.
 
+## 🫡 You can help me by Donating
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/heytanix)
+
 ### Dataset Overview:
 - **Dataset**: A single text file (`shake.txt`) containing the complete works of William Shakespeare.
 - **Source**: This text serves as the training corpus for fine-tuning.
@@ -45,35 +48,6 @@ The project is structured into a series of clear, sequential steps as demonstrat
 
 ### Conclusion
 This project successfully demonstrates the power of transfer learning in NLP. By starting with a pre-trained GPT-2 model, we were able to achieve impressive stylistic adaptation with a relatively straightforward fine-tuning process. The **Hugging Face `Trainer` API** significantly simplifies the training loop, making such projects highly accessible.
-
-## How to Run This Project
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repository-url>
-    cd <repository-name>
-    ```
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
-    pip install transformers datasets accelerate
-    ```
-4.  **Add the dataset:**
-    - Place the training data in a file named `shake.txt` in the root directory of the project.
-
-5.  **Run the notebook:**
-    - Launch Jupyter Lab or Jupyter Notebook and open `gpt2-generator.ipynb`.
-    - Run the cells sequentially to fine-tune the model and generate text.
-
-## Future Work
-- **Experiment with larger models**: Fine-tune more powerful models like `gpt2-medium` or `gpt2-large` for potentially more coherent and creative text generation.
-- **Hyperparameter Tuning**: Systematically tune hyperparameters like learning rate, batch size, and the number of epochs to optimize the model's performance.
-- **Advanced Sampling**: Explore different text generation strategies like top-k sampling, nucleus sampling (top-p), or beam search to improve the quality of the generated output during inference.
-- **Quantitative Evaluation**: Implement evaluation metrics like **Perplexity** to formally measure how well the model has learned the language distribution of the training data.
 
 ## Acknowledgments
 - [Hugging Face](https://huggingface.co/) for their incredible `transformers` library and open-source models.
